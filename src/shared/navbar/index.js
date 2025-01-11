@@ -21,18 +21,23 @@ import {
 } from "@/reducers/authentication/authenticationSelector";
 import { ROLE } from "@/constants/role";
 import { logout } from "@/reducers/authentication/authenticationReducer";
+import { useRouter } from "next/router";
 
 export default function NavBar(props) {
   const page = useSelector(currentRoutes);
   const role = useSelector(currentRole);
   const username = useSelector(getUsername);
   const authenState = useSelector(getAuthenRole);
+  const router = useRouter();
 
   const dispatch = useDispatch();
 
   const handleLogout = () => {
     dispatch(logout());
     dispatch(changeToHomePage());
+    router.push({
+      pathname: '/'
+    });
   };
 
   const displayWithAuthenState = function () {
@@ -137,6 +142,7 @@ export default function NavBar(props) {
           >
             <img src={ASSET.LOGO.src} alt={"Logo"} />
           </Link>
+          
           {routes.map((route, index) => {
             if (index > 1) {
               return;

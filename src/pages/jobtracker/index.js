@@ -259,7 +259,7 @@ const JobTracker = () => {
       </TableContainer>
 
       <Dialog open={open} onClose={() => setOpen(false)} maxWidth="md" fullWidth>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="space-y-4">
           <DialogTitle>Add New Job</DialogTitle>
           <DialogContent>
             <Stack spacing={3} sx={{ mt: 2 }}>
@@ -337,10 +337,12 @@ const JobTracker = () => {
               />
             </Stack>
           </DialogContent>
+
           <DialogActions>
             <Button onClick={() => setOpen(false)}>Cancel</Button>
             <Button type="submit">Save Job</Button>
           </DialogActions>
+
         </form>
       </Dialog>
       

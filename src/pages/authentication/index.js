@@ -123,7 +123,7 @@ export default function AuthenticationScreen() {
               />
             ) : (
               <ForgetPasswordForm onForgotPassword={handleForgetPassword}/>
-            )}
+            ) }
           </div>
         </div>
         {authenFailMessage}

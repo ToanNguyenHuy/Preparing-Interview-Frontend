@@ -30,10 +30,12 @@ export default function Home() {
         className={"w-full h-60 bg-slate-300 flex items-end px-10 shadow-inner"}
       >
         {username ? (
-          <div className={"h-1/2 text-2xl font-semibold text-slate-800"}>
+            <>
+            <div className={"h-1/2 text-2xl font-semibold text-slate-800"}>
             Welcome back <br />
             <span className={"font-black text-5xl"}>{username}</span>
-          </div>
+            </div>
+            </>
         ) : (
           <div className={"h-1/2 text-2xl font-semibold text-slate-800"}>
             You are logged in as <br />
@@ -42,8 +44,9 @@ export default function Home() {
         )}
       </div>
       <div className={"w-full px-20 flex flex-row drop-shadow-sm"}>
-        <HistoryList />
-      </div>
+             <HistoryList />
+            </div>
+      
     </main>
   );
 }

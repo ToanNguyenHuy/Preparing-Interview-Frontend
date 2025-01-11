@@ -92,10 +92,7 @@ export default function SignInForm({ onSignUp, onForgotPassword, ...props }) {
         Sign In
       </Button>
       <div className={"w-full flex flex-row justify-between mt-4"}>
-        <Button variant={"text"} onClick={handleForgotPassword}>
-          Forgot password
-        </Button>
-        <Button variant={"text"} onClick={handleSignUp}>
+        <Button variant={"text"} onClick={handleSignUp} className={" w-full mt-4"}>
           Sign Up
         </Button>
       </div>

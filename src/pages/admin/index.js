@@ -107,7 +107,7 @@ export default function AdminstrationPage(props) {
               value={formData.hardLevel}
               onChange={handleChange}
               label="Level"
-              className="w-full bg-gray-50 rounded-md"
+              className={"w-[445px] input-field"}
             >
               <MenuItem value="EASY" className="text-green-600">Easy</MenuItem>
               <MenuItem value="MEDIUM" className="text-yellow-600">Medium</MenuItem>

@@ -7,6 +7,7 @@ const BASE_URL_AUTHEN = "http://localhost:3001";
 const BASE_URL_PB = "http://localhost:3002";
 const BASE_URL_CODE_EXECUTING = "http://localhost:3003";
 const BASE_URL_JOB_TRACKER = "http://localhost:3001";
+const BASE_URL_CHATBOT = "http://localhost:8030";
 
 
 
